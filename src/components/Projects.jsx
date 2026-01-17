@@ -1,5 +1,3 @@
-import { ExternalLink, Github } from 'lucide-react';
-import React from 'react'
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -33,7 +31,7 @@ const Projects = () => {
             ],
             tech: ['React', 'Tailwind CSS', 'JavaScript', 'Responsive Design', 'Component Architecture'],
             github: 'https://github.com/vipul-patil6342/portfolio',
-            website: 'https://your-portfolio-domain.com'
+            website: 'https://vipul-patil.vercel.app/'
         }
     ];
 
