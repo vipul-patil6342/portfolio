@@ -12,7 +12,7 @@ const Contact = () => {
 
                 <div className="flex gap-6 justify-center flex-wrap">
                     <a
-                        href="mailto:vipulpatil6342@gmail.com"
+                        href="mailto:patilvipul2912@gmail.com"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition text-white font-medium"
                     >
                         <Mail size={20} />
