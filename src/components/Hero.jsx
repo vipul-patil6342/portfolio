@@ -60,7 +60,7 @@ const Hero = () => {
                         LinkedIn
                     </a>
                     <a
-                        href="#"
+                        href="https://drive.google.com/file/d/1t0Dw2IYCQfAGpEMPCA0pUyrHsrVJN5P9/view?usp=sharing"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition border border-slate-700"
                     >
                         <ExternalLink size={20} />
