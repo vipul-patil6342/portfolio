@@ -17,7 +17,7 @@ const Skills = () => {
         },
         {
             title: 'Tools & DevOps',
-            skills: ['Git', 'Postman', 'Maven', 'Docker']
+            skills: ['Git', 'Postman', 'Maven']
         }
     ];
 
