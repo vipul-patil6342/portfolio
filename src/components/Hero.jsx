@@ -1,6 +1,24 @@
 import { ChevronDown, ExternalLink, Github, Linkedin } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+    const [displayedText, setDisplayedText] = useState("");
+    const fullText = "Aspiring Full-Stack Developer | Spring Boot & React";
+
+    useEffect(() => {
+        let index = 0;
+        const interval = setInterval(() => {
+            if (index < fullText.length) {
+                setDisplayedText(fullText.slice(0, index + 1));
+                index++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 50);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         element?.scrollIntoView({ behavior: 'smooth' });
@@ -10,11 +28,14 @@ const Hero = () => {
         <section className="min-h-screen flex items-center justify-center px-6 text-center pt-16">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
-                    Full-Stack Developer
+                    Vipul Patil
                 </h1>
-                <p className="text-2xl text-cyan-400 font-medium mb-6">
-                    Spring Boot & React
-                </p>
+                <div className="mb-8">
+                    <p className="text-xl md:text-2xl text-cyan-400 font-medium min-h-12">
+                        {displayedText}
+                        <span className="animate-pulse">|</span>
+                    </p>
+                </div>
                 <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
                     Building scalable, secure web applications with clean architecture and modern practices
                 </p>
