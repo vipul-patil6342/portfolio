@@ -32,7 +32,7 @@ const Projects = () => {
                 'Fast performance with optimized React components'
             ],
             tech: ['React', 'Tailwind CSS', 'JavaScript', 'Responsive Design', 'Component Architecture'],
-            github: 'https://github.com/your-username/portfolio',
+            github: 'https://github.com/vipul-patil6342/portfolio',
             website: 'https://your-portfolio-domain.com'
         }
     ];
